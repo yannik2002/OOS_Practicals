@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.mainview">
+    <children>
+        <ListView fx:id="listAccounts" layoutX="29.0" layoutY="14.0" prefHeight="264.0" prefWidth="265.0">
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem fx:id="choose" mnemonicParsing="false" onAction="#switchToAccountview" text="Auswählen" />
+                        <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#removeAccount" text="Löschen" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </ListView>
+
+        <!-- selectAccountView in mainview erstmal ausgeschaltet -->
+        <AnchorPane fx:id="selectAccountview" managed="false" prefHeight="0.0" prefWidth="0.0" visible="false" />
+
+        <ButtonBar fx:id="addButton" layoutX="294.0" layoutY="8.0" prefHeight="40.0" prefWidth="144.0">
+         <buttons>
+                <Button mnemonicParsing="false" onAction="#addAccount" prefHeight="25.0" prefWidth="127.0" text="Account hinzufügen" />
+         </buttons>
+        </ButtonBar>
+    </children>
+</AnchorPane>

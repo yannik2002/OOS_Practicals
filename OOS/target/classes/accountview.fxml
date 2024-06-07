@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="295.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.accountview">
+   <children>
+      <Pane layoutX="16.0" layoutY="8.0" prefHeight="40.0" prefWidth="424.0">
+         <children>
+            <TextFlow fx:id="textAccount" layoutY="8.0" prefHeight="25.0" prefWidth="182.0" />
+            <TextFlow fx:id="textAccountBalance" layoutX="211.0" layoutY="8.0" prefHeight="25.0" prefWidth="213.0" textAlignment="RIGHT" />
+         </children>
+      </Pane>
+      <ListView fx:id="listTransactions" layoutX="16.0" layoutY="48.0" prefHeight="200.0" prefWidth="424.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showAscending" text="Aufsteigende Sortierung" />
+                  <MenuItem mnemonicParsing="false" onAction="#showDescending" text="Absteigende Sortierung" />
+                  <MenuItem mnemonicParsing="false" onAction="#showPositive" text="Anzeige von nur positiven amounts" />
+                  <MenuItem mnemonicParsing="false" onAction="#showNegative" text="Anzeige von nur negativen amounts" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeTransaction" text="Transaktion löschen" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+      <ButtonBar layoutX="113.0" layoutY="248.0" prefHeight="40.0" prefWidth="327.0">
+         <buttons>
+          <Button mnemonicParsing="false" onAction="#addTransaction" prefHeight="25.0" prefWidth="141.0" text="Transaktion hinzufügen" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#backToAccounts" prefHeight="25.0" prefWidth="120.0" text="Zurück" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

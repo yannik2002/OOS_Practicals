@@ -1,0 +1,42 @@
+[
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Yannik",
+      "recipient": "Keine Ahnung",
+      "date": "25.11.2023",
+      "amount": 300.01,
+      "description": "transfer3"
+    }
+  },
+  {
+    "CLASSNAME": "OutgoingTransfer",
+    "INSTANCE": {
+      "sender": "Yannik",
+      "recipient": "hallo",
+      "date": "13",
+      "amount": 123.0,
+      "description": "123"
+    }
+  },
+  {
+    "CLASSNAME": "IncomingTransfer",
+    "INSTANCE": {
+      "sender": "Noch irgendwer",
+      "recipient": "Yannik",
+      "date": "24.11.2023",
+      "amount": 500.5,
+      "description": "transfer2"
+    }
+  },
+  {
+    "CLASSNAME": "IncomingTransfer",
+    "INSTANCE": {
+      "sender": "Irgendwer",
+      "recipient": "Yannik",
+      "date": "23.11.2023",
+      "amount": 1000.0,
+      "description": "transfer1"
+    }
+  }
+]
