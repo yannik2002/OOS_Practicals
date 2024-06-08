@@ -1,2 +1,2 @@
-# Object-Oriented Software Development
-This Maven-based project is a bank system developed using Java, featuring account creation, transaction management, and history viewing, with a user-friendly GUI built in JavaFX.
+# Bank Application
+This Maven-based project is a bank system developed in the course Object-Oriented Software Development using Java, featuring account creation, transaction management, and history viewing, with a user-friendly GUI built in JavaFX.
