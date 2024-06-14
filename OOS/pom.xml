@@ -53,11 +53,6 @@
             <groupId>org.openjfx</groupId>
             <version>${javafx.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>21-ea+24</version>
-        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -78,7 +73,7 @@
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javafx.version>19</javafx.version>
-        <javafx.maven.plugin.version>0.0.6</javafx.maven.plugin.version>
+        <javafx.version>21</javafx.version>
+        <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
     </properties>
 </project>
