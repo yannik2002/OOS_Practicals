@@ -16,3 +16,4 @@ The Bank Application is a simple and intuitive application for managing bank acc
 - **JavaFX**: GUI framework
 - **Gson**: Library for JSON serialization/deserialization
 - **JUnit 5**: Testing framework
+- **Javadoc**: Documentation
