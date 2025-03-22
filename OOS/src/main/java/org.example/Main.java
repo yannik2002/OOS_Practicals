@@ -14,10 +14,8 @@ import com.google.gson.*;
 public class Main {
     public static void main(String[] args) throws TransactionAttributeException, IOException, AccountAlreadyExistsException, TransactionAlreadyExistException, AccountDoesNotExistException, TransactionDoesNotExistException {
 
-        // Testen von Serialisierung/Deserialisierung Praktikum 4:
-
-        // die bank zum Testen erstellen
-        /*PrivateBank bank = new PrivateBank("bank", 0.05, 0.1,
+        /* Testen von Serialisierung/Deserialisierung Praktikum 4:
+        PrivateBank bank = new PrivateBank("bank", 0.05, 0.1,
                     "C:\\Users\\ysint\\Desktop\\OOSPraktikum04\\src\\main\\java\\bank\\BankDaten\\");
 
         bank.createAccount("Fritz");
@@ -34,21 +32,11 @@ public class Main {
 
         System.out.println(bank.toString());*/
 
-
-
+        
         //bank.addTransaction("peter", payment);
         //bank.addTransaction("peter", incomingTransfer1);
         //bank.writeAccount("peter");
         //bank.readAccounts();
-
-
-
-
-        System.out.println("test");
-
-
-
-
 
         /*FileWriter writer = new FileWriter(this.directoryName + "/konto_" + account + ".json");
         List<Transaction> accountliste = accountsToTransactions.get(account);
@@ -58,7 +46,7 @@ public class Main {
 
 
 
-        /* P3 OUTPUT
+        /* Praktikum 3:
         // in der main versuchen alle exceptions mit try catch konstrukten zu fangen
 
         System.out.println("<====================================>");
